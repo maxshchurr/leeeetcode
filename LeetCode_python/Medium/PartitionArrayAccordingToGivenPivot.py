@@ -28,7 +28,7 @@ The relative ordering of the elements less than and greater than pivot is also m
 
 
 class Solution:
-    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+    def pivotArray(self, nums: [int], pivot: int) -> [int]:
         left_side, middle, right_side = [], [], []
         for num in nums:
             if num < pivot:
