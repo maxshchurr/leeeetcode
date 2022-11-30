@@ -53,6 +53,7 @@ class Solution1:
 
             prev[v] = i
 
+
 nums1 = [3, 2, 4]
 target1 = 6
 sol1 = Solution1()
