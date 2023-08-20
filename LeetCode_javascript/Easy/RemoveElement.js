@@ -55,7 +55,8 @@ var removeElement = function(nums, val) {
     if (nums[i] !== val){
         nums[startIndex] = nums[i];
         startIndex++;
+        }
     }
-    }
+
     return startIndex;
 };
