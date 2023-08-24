@@ -19,3 +19,7 @@ def number(lines):
         lines[i] = f'{i+1}: {lines[i]}'
 
     return lines
+
+
+def number2(lines):
+    return [f'{i}: {val}' for i, val in enumerate(lines, 1)]
