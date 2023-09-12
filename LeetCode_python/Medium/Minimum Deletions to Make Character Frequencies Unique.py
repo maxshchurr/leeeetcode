@@ -47,7 +47,4 @@ class Solution:
             frequencies.add(frequency)
             
         return to_delete
-        
     
-s = 'abbcccddddeeeefffffgggggg'
-print(Solution().minDeletions(s))
