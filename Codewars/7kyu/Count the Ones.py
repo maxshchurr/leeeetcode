@@ -11,8 +11,6 @@ The interesting part of this task is that you have to do it without string opera
 """
 
 
-
 # The interesting part of this task is that you have to do it without string operation - ignored the rules
 def hamming_weight(x):
     return bin(x).count('1')
-    
