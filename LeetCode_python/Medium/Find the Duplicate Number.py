@@ -33,8 +33,6 @@ Can you solve the problem in linear runtime complexity?
 
 """
 
-from collections import Counter
-
 
 class Solution:
     def findDuplicate(self, nums: list[int]) -> int:
