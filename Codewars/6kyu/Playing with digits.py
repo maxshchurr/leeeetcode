@@ -39,3 +39,11 @@ def dig_pow(n, p):
         result = -1
 
     return int(result)
+
+
+def dig_pow1(n, p):
+    s = 0
+    for i,c in enumerate(str(n)):
+        s += pow(int(c), p+i)
+
+    return s/n if s % n == 0 else -1
