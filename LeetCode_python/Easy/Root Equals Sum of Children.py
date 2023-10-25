@@ -22,7 +22,6 @@ Explanation: The values of the root, its left child, and its right child are 5, 
 
 """
 
-
 from typing import Optional
 
 
