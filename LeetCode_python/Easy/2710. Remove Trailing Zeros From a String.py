@@ -22,3 +22,11 @@ Explanation: Integer "123" has no trailing zeros, we return integer "123".
 class Solution:
     def removeTrailingZeros(self, num: str) -> str:
         return num.rstrip('0')
+
+
+class Solution1:
+    def removeTrailingZeros(self, num: str) -> str:
+        while num[-1] == '0':
+            num = num[0:-1]
+
+        return num
