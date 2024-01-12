@@ -19,6 +19,7 @@ Input: ransomNote = "aa", magazine = "aab"
 Output: true
 
 """
+from collections import Counter
 
 
 class Solution:
@@ -36,4 +37,17 @@ class Solution2:
         for i in set_ransomNote:
             if ransomNote.count(i) > magazine.count(i):
                 return False
+        return True
+
+
+class Solution3:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        m_cnt = Counter(magazine)
+
+        for i in ransomNote:
+            if i not in m_cnt or m_cnt[i] == 0:
+                return False
+
+            m_cnt[i] -= 1
+
         return True
